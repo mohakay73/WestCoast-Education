@@ -31,7 +31,7 @@ const addImageClickHandler = (images) => {
     const courseId = image.getAttribute(`id`);
 
     image.addEventListener(`click`, () => {
-      alert(`Course id is ${courseId}, course imagesource is: ${src}`);
+      location.href = `/html/course-details.html?id=${courseId}`;
     });
   });
 };
