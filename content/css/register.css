@@ -1,5 +1,10 @@
 /* classes for the contact page */
 /* Mobile First... */
+
+#contact-form p {
+  font-size: 1.5rem;
+  color: #022749;
+}
 #contact-form {
   padding: 1.88rem 0;
   margin: 0 1rem;
@@ -17,7 +22,8 @@
 #contact-form textarea {
   width: 100%;
   padding: 0.63rem;
-  border: solid 1px #ddd;
+  border: solid 1px #022749;
+  border-radius: 1rem;
 }
 
 #contact-form textarea {
@@ -27,20 +33,7 @@
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none !important;
-  border: solid 1px #ef6c00;
-}
-
-#contact-info {
-  background: #004d40;
-  color: #f4f4f4;
-}
-
-#contact-info .box {
-  border-bottom: dotted 1px #00796b;
-}
-
-#contact-info .box:last-child {
-  border-bottom: none;
+  border: solid 1px #c2bf2a;
 }
 
 /* Media Queries */
@@ -49,13 +42,5 @@
   #contact-form {
     max-width: 600px;
     margin: auto;
-  }
-
-  #contact-info > div {
-    display: flex;
-    justify-content: space-around;
-  }
-  #contact-info .box {
-    border-bottom: none;
   }
 }
