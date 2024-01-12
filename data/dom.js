@@ -18,7 +18,7 @@ const createCourseInfo = (course) => {
   const paragraph = document.createElement(`p`);
   paragraph.appendChild(
     document.createTextNode(
-      `${course.courseNumber} ${course.courseTime} ${course.startDate} ${course.studyForm}`
+      `${course.courseTitle}  ${course.courseNumber}  ${course.courseTime}  ${course.startDate}  ${course.studyForm}`
     )
   );
 

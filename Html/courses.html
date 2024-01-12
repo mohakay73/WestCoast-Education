@@ -18,6 +18,14 @@
       rel="stylesheet"
       href="/content/css/gallery.css"
     />
+    <link
+      rel="stylesheet"
+      href="/content/css/navigation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/content/css/admin/index.css"
+    />
     <script
       src="/data/app.js"
       type="module"
@@ -26,6 +34,43 @@
     <title>Westcoast Education</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="menu">
+            <li class="logo">
+              <h1 class="title">West Coast Education</h1>
+            </li>
+            <li class="toggle">
+              <input
+                class="menu-btn"
+                type="checkbox"
+                id="menu-btn"
+              />
+              <label
+                class="menu-icon"
+                for="menu-btn"
+                ><span class="nav-icon"></span>
+              </label>
+            </li>
+            <li class="menu-item">
+              <a
+                class="active"
+                href="/index.html"
+                >Start</a
+              >
+            </li>
+            <li class="menu-item"><a href="/pages/about.html">Om Oss</a></li>
+            <li class="menu-item">
+              <a href="/pages/contact.html">Kontakta Oss</a>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/index.html">Administration</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="courses-gallery"></section>
     </main>
