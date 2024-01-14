@@ -1,4 +1,3 @@
-console.log('Script loaded');
 import HttpClient from './http.js';
 
 const courseDetailsContainer = document.querySelector(
@@ -7,7 +6,7 @@ const courseDetailsContainer = document.querySelector(
 
 async function initPage() {
   const courseId = getCourseIdFromUrl();
-  console.log('Course ID:', courseId);
+
   if (courseId) {
     const courseDetails = await loadCourseDetails(courseId);
     displayCourseDetails(courseDetails);
@@ -29,11 +28,13 @@ const loadCourseDetails = async (courseId) => {
 };
 
 const displayCourseDetails = (courseDetails) => {
-  const titleElement = document.querySelector('#course-title');
-  const descriptionElement = document.querySelector('#course-description');
-
-  titleElement.textContent = courseDetails.courseTitle;
-  descriptionElement.textContent = courseDetails.description;
+  document.querySelector('#course-title').textContent =
+    courseDetails.courseTitle;
+  document.querySelector(
+    '#course-description'
+  ).textContent = `${courseDetails.description} - ${courseDetails.courseDuration}`;
+  document.querySelector('#course-number').textContent =
+    courseDetails.courseNumber;
 };
 
 document.addEventListener('DOMContentLoaded', initPage);
