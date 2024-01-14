@@ -30,11 +30,20 @@ const loadCourseDetails = async (courseId) => {
 const displayCourseDetails = (courseDetails) => {
   document.querySelector('#course-title').textContent =
     courseDetails.courseTitle;
-  document.querySelector(
-    '#course-description'
-  ).textContent = `${courseDetails.description} - ${courseDetails.courseDuration}`;
   document.querySelector('#course-number').textContent =
     courseDetails.courseNumber;
+  document.querySelector('#course-image').textContent = courseDetails.imageUrl;
+  document.querySelector('#course-description').textContent =
+    courseDetails.description;
+  document.querySelector(
+    '#course-form'
+  ).textContent = `Study Form: ${courseDetails.studyForm}`;
+  document.querySelector(
+    '#course-duration'
+  ).textContent = `Course Duration: ${courseDetails.courseTime}`;
+  document.querySelector(
+    '#course-time'
+  ).textContent = `Start Date: ${courseDetails.startDate}`;
 };
 
 document.addEventListener('DOMContentLoaded', initPage);
