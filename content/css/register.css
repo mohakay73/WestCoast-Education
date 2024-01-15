@@ -1,6 +1,6 @@
-/* classes for the contact page */
-/* Mobile First... */
-
+body {
+  background-color: rgb(230, 225, 216);
+}
 #contact-form p {
   font-size: 1.5rem;
   color: #022749;
@@ -8,10 +8,11 @@
 #contact-form {
   padding: 1.88rem 0;
   margin: 0 1rem;
+  height: 100vh;
 }
 
 #contact-form .form-control {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 #contact-form label {
@@ -36,8 +37,6 @@
   border: solid 1px #c2bf2a;
 }
 
-/* Media Queries */
-/* min-width: 768px */
 @media (min-width: 768px) {
   #contact-form {
     max-width: 600px;

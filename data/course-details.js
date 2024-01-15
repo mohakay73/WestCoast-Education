@@ -30,9 +30,10 @@ const loadCourseDetails = async (courseId) => {
 const displayCourseDetails = (courseDetails) => {
   document.querySelector('#course-title').textContent =
     courseDetails.courseTitle;
-  document.querySelector('#course-number').textContent =
-    courseDetails.courseNumber;
-  document.querySelector('#course-image').textContent = courseDetails.imageUrl;
+  document.querySelector(
+    '#course-number'
+  ).textContent = `Course Number: ${courseDetails.courseNumber}`;
+
   document.querySelector('#course-description').textContent =
     courseDetails.description;
   document.querySelector(
