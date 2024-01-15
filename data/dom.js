@@ -28,9 +28,12 @@ const createCourseList = (courses, element) => {
   // Loopa igenom alla bilar vehicles
   // För varje bil skapa en div
   // Den skapade diven skall läggas till element som vi skickade in
-  vehicles.forEach((course) => {
+  courses.forEach((course) => {
     const container = createDiv();
-    container.setAttribute('vehicleid', course.id);
+    container.setAttribute('Courseid', course.id);
+    container.setAttribute('Courseid', course.courseNumber);
+    container.setAttribute('Courseid', course.startDate);
+    container.setAttribute('Courseid', course.studyForm);
 
     element.appendChild(container);
   });
@@ -52,4 +55,4 @@ const addImageClickHandler = (images) => {
   });
 };
 
-export { createCard, addImageClickHandler };
+export { createCard, addImageClickHandler, createCourseList };
