@@ -30,10 +30,10 @@ const createCourseList = (courses, element) => {
   // Den skapade diven skall läggas till element som vi skickade in
   courses.forEach((course) => {
     const container = createDiv();
-    container.setAttribute('Courseid', course.id);
-    container.setAttribute('Courseid', course.courseNumber);
-    container.setAttribute('Courseid', course.startDate);
-    container.setAttribute('Courseid', course.studyForm);
+    container.setAttribute('data-id', course.id);
+    container.setAttribute('data-courseNumber', course.courseNumber);
+    container.setAttribute('data-startDate', course.startDate);
+    container.setAttribute('data-studyForm', course.studyForm);
 
     element.appendChild(container);
   });
