@@ -1,12 +1,38 @@
-#vehicles div {
-  display: flex;
-  gap: 10px;
-  margin: 1.5rem 0;
-  padding: 1rem 0.8rem;
-  border: solid 2px #5a958e;
-  border-radius: 0.8rem;
-  background-color: #004d40;
-  color: #f4f4f4;
-  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,200;1,400;1,500;1,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.card {
+  background: rgb(230, 225, 216);
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 0.7rem;
+  font-size: 1.25rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  background: var(--card-hover-color);
+}
+
+.page-title {
+  color: #022749;
+  font-size: 3rem;
+  margin: 10px;
+  text-align: center;
+}
+.page-sub-title {
+  color: #022749;
+  text-align: center;
 }

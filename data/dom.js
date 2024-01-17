@@ -14,29 +14,40 @@ const createImage = (imageUrl, id) => {
   return image;
 };
 
-const createCourseInfo = (course) => {
-  const paragraph = document.createElement(`p`);
-  paragraph.appendChild(
+export const createCourseList = (course) => {
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  const body = document.createElement('div');
+  body.classList.add('card-body');
+  card.setAttribute('courseid', course.coourseId);
+  const bodyHeader = document.createElement('h5');
+  bodyHeader.classList.add('card-title');
+  bodyHeader.appendChild(document.createTextNode(course.courseTitle));
+
+  const courseNumber = document.createElement('p');
+  courseNumber.classList.add('card-number');
+  courseNumber.appendChild(document.createTextNode(course.courseNumber));
+  bodyHeader.appendChild(courseNumber);
+
+  const info = document.createElement('p');
+  info.classList.add('card-info');
+  info.appendChild(
     document.createTextNode(
-      `${course.courseTitle}  ${course.courseNumber}  ${course.courseTime}  ${course.startDate}  ${course.studyForm}`
+      `Course time : ${course.courseTime} /  Course Date: ${course.startDate} /  Study form: ${course.studyForm}`
     )
   );
 
-  return paragraph;
-};
-const createCourseList = (courses, element) => {
-  // Loopa igenom alla bilar vehicles
-  // För varje bil skapa en div
-  // Den skapade diven skall läggas till element som vi skickade in
-  courses.forEach((course) => {
-    const container = createDiv();
-    container.setAttribute('data-id', course.id);
-    container.setAttribute('data-courseNumber', course.courseNumber);
-    container.setAttribute('data-startDate', course.startDate);
-    container.setAttribute('data-studyForm', course.studyForm);
+  const description = document.createElement('p');
+  description.classList.add('card-description');
+  description.appendChild(document.createTextNode(course.description));
 
-    element.appendChild(container);
-  });
+  bodyHeader.appendChild(description);
+  bodyHeader.appendChild(info);
+  body.appendChild(bodyHeader);
+  card.appendChild(body);
+
+  return card;
 };
 
 const createDiv = () => {
@@ -55,4 +66,4 @@ const addImageClickHandler = (images) => {
   });
 };
 
-export { createCard, addImageClickHandler, createCourseList };
+export { createCard, addImageClickHandler };
