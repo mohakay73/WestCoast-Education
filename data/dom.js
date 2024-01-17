@@ -2,7 +2,7 @@ const createCard = (course) => {
   const div = document.createElement(`div`);
   div.classList.add(`course-image`);
   div.appendChild(createImage(course.imageUrl, course.id));
-  div.appendChild(createCourseInfo(course));
+  div.appendChild(createCourseList(course));
   return div;
 };
 

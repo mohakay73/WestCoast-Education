@@ -62,17 +62,6 @@ textarea {
   width: 100%;
 }
 
-.page-title {
-  margin: 2rem 0 1rem 0;
-  text-align: center;
-  color: #ef6c00;
-}
-
-.page-sub-title {
-  text-align: center;
-  color: #004d40;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
