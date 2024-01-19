@@ -21,6 +21,15 @@ main {
   border: 1px solid #022749;
   border-radius: 0.5rem;
 }
+.course-image:hover {
+  background-color: white;
+  color: #878836;
+}
+.course-image img:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
 
 .course-image img {
   border-top-right-radius: 0.5rem;

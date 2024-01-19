@@ -34,7 +34,7 @@ export const createCourseList = (course) => {
   info.classList.add('card-info');
   info.appendChild(
     document.createTextNode(
-      `Course time : ${course.courseTime} /  Course Date: ${course.startDate} /  Study form: ${course.studyForm}`
+      `Course time : ${course.courseTime} /  Course Date: ${course.startDate} /  Study form: ${course.studyForm} / Course coast: ${course.coast}`
     )
   );
 
@@ -51,8 +51,6 @@ export const createCourseList = (course) => {
 };
 
 const createDiv = () => {
-  // const div = document.createElement('div');
-  // return div;
   return document.createElement('div');
 };
 const addImageClickHandler = (images) => {

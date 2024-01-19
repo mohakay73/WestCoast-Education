@@ -18,12 +18,15 @@
 .card-body {
   padding: 0.7rem;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .card:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
-  background: var(--card-hover-color);
+  background-color: white;
+  color: #878836;
+  border-radius: 20px;
 }
 
 .page-title {

@@ -9,7 +9,7 @@ const initPage = async () => {
     const courses = await http.get();
 
     // Assuming #courses is the container where you want to append the cards
-    const coursesContainer = document.querySelector('.courses');
+    const coursesContainer = document.querySelector('.courses-info-admin');
 
     courses.forEach((course) => {
       const card = createCourseList(course);

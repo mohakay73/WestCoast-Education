@@ -1,4 +1,7 @@
 /* Uitlities classes */
+body {
+  background-color: rgb(230, 225, 216);
+}
 .container {
   max-width: 960px;
   margin: auto;
@@ -62,11 +65,32 @@
 .box i {
   margin-bottom: 1rem;
 }
-
+#addCourseForm {
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+#addCourseForm p {
+  font-size: 1.5rem;
+  color: #022749;
+}
+#addCourseForm label {
+  display: block;
+}
+#addCourseForm input,
+#addCourseForm textarea {
+  width: 100%;
+  padding: 0.63rem;
+  border: solid 1px #022749;
+  border-radius: 1rem;
+}
 /* Media Queries */
 /* min-width:768px */
 @media (min-width: 768px) {
   .btn {
     font-size: 1rem;
+  }
+  #addCourseForm {
+    max-width: 600px;
+    margin: auto;
   }
 }
