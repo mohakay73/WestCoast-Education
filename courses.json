@@ -40,5 +40,16 @@
       "studyForm": "In Place",
       "description": "The importance of digital accessibility has become clearer and clearer. Educating yourself in accessibility for web and app development will give you basic knowledge about different types of disabilities and what can be obstacles if the special needs are not taken into account. In this way, you will be able to build accessibility adaptations right from the start in future digital projects for the web or apps.During the course, you will also realize how great the need for digital inclusion is and how you can be part of a positive development going forward."
     }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "firstName": "john",
+      "afterName": "Kay",
+      "email": "johnkay@email.com",
+      "phoneNumber": "073123456",
+      "billingAdress": "sotar",
+      "Password": "123"
+    }
   ]
 }
