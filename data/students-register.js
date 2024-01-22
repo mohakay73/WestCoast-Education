@@ -15,7 +15,7 @@ const saveStudent = async (student) => {
   const url = 'http://localhost:3000/students ';
   const http = new HttpClient(url);
   const newStudent = await http.add(student);
-  console.log(newStudent);
+  location.href = './courses.html';
 };
 
 form.addEventListener('submit', registerStudent);

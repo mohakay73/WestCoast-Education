@@ -1,5 +1,11 @@
 /* Index pages css classes */
 /* Mobile first */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  margin: 0;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -34,6 +40,9 @@
 
 #footer {
   background-color: #022749;
+  text-align: center;
+  color: #fff;
+  padding: 0.4rem;
 }
 .footer-social-icon a {
   color: #fff;

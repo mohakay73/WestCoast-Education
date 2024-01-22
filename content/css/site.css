@@ -29,13 +29,6 @@ section p {
   text-align: center;
 }
 
-footer {
-  text-align: center;
-  background: #444;
-  color: #fff;
-  padding: 0.4rem;
-}
-
 form {
   padding: 0 2rem;
   margin: 0 1rem;

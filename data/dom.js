@@ -14,6 +14,34 @@ const createImage = (imageUrl, id) => {
   return image;
 };
 
+const createCardStudent = (student) => {
+  const div = document.createElement(`div`);
+  div.classList.add('card-body');
+  div.appendChild(createStudentList(student));
+  return div;
+};
+
+const createStudentList = (student) => {
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  const body = document.createElement('div');
+  body.classList.add('card-body');
+  card.setAttribute('studentid', student.studentId);
+
+  const bodyHeader = document.createElement('p');
+  bodyHeader.classList.add('card-title');
+  bodyHeader.appendChild(
+    document.createTextNode(
+      `Student Name : ${student.firstName} ${student.lastName} / Course Number: ${student.courseNumber}`
+    )
+  );
+
+  body.appendChild(bodyHeader);
+  card.appendChild(body);
+  return card;
+};
+
 export const createCourseList = (course) => {
   const card = document.createElement('div');
   card.classList.add('card');
@@ -64,4 +92,4 @@ const addImageClickHandler = (images) => {
   });
 };
 
-export { createCard, addImageClickHandler };
+export { createCard, addImageClickHandler, createCardStudent };

@@ -32,7 +32,6 @@ nav ul li h1.title {
 
 nav ul li.logo span {
   color: #e00f0f;
-  /* color: #2196f3; */
 }
 
 nav ul li.toggle {
@@ -61,7 +60,6 @@ nav ul:has(li .menu-btn:checked) .menu-item {
   display: block;
 }
 
-/* Draw the hamburger menu */
 nav ul li .menu-btn {
   display: none;
 }
@@ -99,7 +97,6 @@ nav ul li .menu-icon .nav-icon:after {
   top: 5px;
 }
 
-/* Animate the hamburger menu */
 nav ul li .menu-btn:checked ~ .menu-icon .nav-icon {
   background: transparent;
 }
@@ -114,8 +111,6 @@ nav ul li .menu-btn:checked ~ .menu-icon .nav-icon::after {
   top: 0;
 }
 
-/* MEDIA QUERIES */
-/* min-width: 768px */
 @media (min-width: 768px) {
   nav ul {
     align-items: center;

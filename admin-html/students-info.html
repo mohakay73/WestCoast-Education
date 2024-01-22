@@ -8,6 +8,10 @@
     />
     <link
       rel="stylesheet"
+      href="/content/css/admin/index-admin.css"
+    />
+    <link
+      rel="stylesheet"
       href="/content/css/site.css"
     />
     <link
@@ -30,16 +34,20 @@
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"
     ></script>
-
-    <title>Westcoast-Education</title>
+    <script
+      src="/data/students-info.js"
+      type="module"
+      defer
+    ></script>
+    <title>students-info</title>
   </head>
-  <body class="grid-container">
+  <body>
     <header>
       <nav>
         <div class="container">
           <ul class="menu">
             <li class="logo">
-              <a href="index.html"> West Coast Education</a>
+              <a href="/Html/index.html"> West Coast Education</a>
             </li>
             <li class="toggle">
               <input
@@ -54,28 +62,17 @@
               </label>
             </li>
 
-            <li class="menu-item">
-              <a href="/html/register.html">Register</a>
+            <li class="active">
+              <a href="/admin-html/index-admin.html">Administration</a>
             </li>
             <li class="menu-item">
-              <a href="/admin-html/index-admin.html">Administration</a>
+              <a href="/admin-html/add-course.html">Add course</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <article id="main-area">
-        <section class="container">
-          <h1 class="page-title">Welcome to WestCoast Education</h1>
-          <a
-            href="/html/courses.html"
-            class="btn"
-            >See our courses</a
-          >
-        </section>
-      </article>
-    </main>
+    <section id="students-info"></section>
     <footer id="footer">
       <p>Westcoast Education &copy; 2023</p>
       <div class="footer-social-icon">

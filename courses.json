@@ -45,11 +45,21 @@
     {
       "id": "1",
       "firstName": "john",
-      "afterName": "Kay",
+      "lastName": "Kay",
       "email": "johnkay@email.com",
       "phoneNumber": "073123456",
       "billingAdress": "sotar",
+      "courseNumber": "1123",
       "Password": "123"
+    },
+    {
+      "id": "d14f",
+      "firstName": "Mohamad",
+      "lastName": "Kayali",
+      "email": "mohakay73@gmail.com",
+      "phonenumber": "0761127556",
+      "streetAddress": "nyköping",
+      "Password": "123456"
     }
   ]
 }
