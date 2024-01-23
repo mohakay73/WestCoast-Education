@@ -73,7 +73,7 @@ body {
 /* min-width: 768px */
 @media (min-width: 960px) {
   #main-area > section {
-    background: url('../images/rubiks-cube.jpg') no-repeat center center/cover;
+    background: url('../images/Vrb7zD.png') no-repeat center center/cover;
     height: 800px;
     padding: 4rem 8rem;
     border-radius: 50px;
@@ -82,7 +82,7 @@ body {
 
 @media (min-width: 1200px) {
   #main-area {
-    background: url('../images/rubiks-cube.jpg') no-repeat center center/cover;
+    background: url('../images/Vrb7zD.png') no-repeat center center/cover;
     height: 800px;
     padding: 4rem 8rem;
     text-align: center;
