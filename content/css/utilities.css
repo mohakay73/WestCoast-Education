@@ -83,8 +83,11 @@ body {
   border: solid 1px #022749;
   border-radius: 1rem;
 }
-/* Media Queries */
-/* min-width:768px */
+#students-info p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .btn {
     font-size: 1rem;

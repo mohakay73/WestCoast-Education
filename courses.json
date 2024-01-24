@@ -58,7 +58,8 @@
       "lastName": "Kayali",
       "email": "mohakay73@gmail.com",
       "phonenumber": "0761127556",
-      "streetAddress": "nyköping",
+      "billingAdress": "nyköping",
+      "courseNumber": "1124",
       "Password": "123456"
     }
   ]
