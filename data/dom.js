@@ -33,7 +33,7 @@ const createStudentList = (student) => {
   bodyHeader.classList.add('card-title');
   bodyHeader.appendChild(
     document.createTextNode(
-      `Student Name : ${student.firstName} ${student.lastName} / Course Number: ${student.courseNumber}`
+      `Student Name : ${student.firstName} ${student.lastName} / Course Name: ${student.courseName}`
     )
   );
 

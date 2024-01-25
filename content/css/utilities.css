@@ -87,6 +87,40 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
+#search-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+  background-color: #8a8181;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1px solid black;
+  border-radius: 10px;
+}
+
+#search-course {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #777171;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #022749;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #878836;
+}
 
 @media (min-width: 768px) {
   .btn {

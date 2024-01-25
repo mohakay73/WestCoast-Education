@@ -49,7 +49,7 @@
       "email": "johnkay@email.com",
       "phoneNumber": "073123456",
       "billingAdress": "sotar",
-      "courseNumber": "1123",
+      "courseName": "Python Programing",
       "Password": "123"
     },
     {
@@ -59,8 +59,18 @@
       "email": "mohakay73@gmail.com",
       "phonenumber": "0761127556",
       "billingAdress": "nyköping",
-      "courseNumber": "1124",
+      "courseName": "Secure coding and software",
       "Password": "123456"
+    },
+    {
+      "id": "6b15",
+      "firstName": "jack",
+      "lastName": "m",
+      "email": "jackm@email.com",
+      "phonenumber": "07199999",
+      "streetAddress": "nyköping",
+      "courseName": "Powershell",
+      "Password": "1122"
     }
   ]
 }
